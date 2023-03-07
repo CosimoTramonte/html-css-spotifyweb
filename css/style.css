@@ -29,47 +29,8 @@
     max-width: 240px;
     height: 92vh;
     padding: 1%;
-    background-color: black;
 }
 
-.side-menu .side-menu-desktop{
-    flex-direction: column;
-    
-}
-
-.side-menu .side-menu-desktop span img{
-    object-fit: contain;
-    width: 210px;
-    padding-bottom: 20px;
-}
-
-.side-menu .side-menu-desktop ul li{
-    list-style: none;
-    color: #A3A3A3;
-    padding: 5px 0;
-}
-
-.side-menu .side-menu-desktop ul li img{
-    object-fit: contain;
-    width: 31px;
-    padding-right: 5px;
-}
-
-.side-menu .side-menu-desktop ul li .fa-plus{
-    background-color: #A3A3A3;
-    padding: 8px;
-    color: black;
-}
-
-.side-menu .side-menu-desktop h2{
-    padding: 25px 0 5px 0;
-    font-size: 15px;
-    color: white;
-}
-
-.side-menu .side-menu-desktop ul:last-child li{
-    padding: 12px 0;
-}
 
 /*SPOTIFY CONTENTS*/
 
