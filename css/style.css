@@ -132,6 +132,7 @@
     flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .spotify-contents nav ul li{
@@ -141,6 +142,58 @@
     font-size: 13px;
 }
 
+.song{
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 20px 0;
+   
+ }
+ 
+ .song h3{
+     color: white;
+     padding-top: 12px;
+ }
+ 
+ .song h5{
+     color: #787A7F;
+     padding-top: 8px;
+ }
+ 
+ .song div{
+     max-width: 250px;
+    min-width: 150px;
+ }
+ 
+ .song div img{
+     object-fit: contain;
+     width: 100%;
+ }
+
+.spotify-contents .spotify-contents-container{
+    padding-left: 10px;
+}
+
+.spotify-contents .spotify-contents-container h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.spotify-contents .spotify-contents-container h5{
+    color: #787A7F;
+    padding-bottom: 20px;
+}
+
+.spotify-contents .spotify-contents-container:nth-child(2) h2{
+    margin-top: 36px;
+}
+
+.spotify-contents .spotify-contents-container .recently-played{
+    flex-wrap: wrap;
+}
+
+.artisti-più-popolari .song div img{
+    border-radius: 100%;
+}
 
 /*TOP BAR*/
 
