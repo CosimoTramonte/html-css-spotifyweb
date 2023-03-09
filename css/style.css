@@ -43,6 +43,7 @@
 
 .side-menu .side-menu-desktop .side-menu-top{
     height: calc(100% - 83px);
+    overflow: auto;
 }
 
 
@@ -507,12 +508,8 @@
 
 @media screen and (max-width: 1285px){
     
-    .spotify-contents .spotify-contents-container .recently-played{
+    .spotify-contents-container .recently-played{
         flex-wrap: wrap;
-    }
-
-    .song div{
-        max-width: 200px;
     }
 
     .song:nth-child(2) h3{
