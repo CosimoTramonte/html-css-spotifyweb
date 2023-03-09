@@ -132,6 +132,33 @@
     cursor: pointer;
 }
 
+.side-menu .side-menu-mobile{
+    height: calc(100% - 83px);
+    display: none;
+}
+
+.side-menu .side-menu-mobile ul li img{
+    object-fit: contain;
+    width: 31px;
+    padding-right: 5px;
+}
+
+.side-menu .side-menu-mobile ul li{
+    list-style: none;
+    color: #A3A3A3;
+    padding: 5px 0;
+}
+
+.side-menu .side-menu-mobile ul li:first-child img{
+    width: 40px;
+    padding-bottom: 30px;
+}
+
+.side-menu .side-menu-desktop ul li:not(:first-child):hover{
+    border-left: 2px solid #ADFF2F;
+    padding: 0 5px;
+}
+
 /*SPOTIFY CONTENTS*/
 
 .spotify-contents{
@@ -144,7 +171,7 @@
 }
 
 .spotify-contents nav ul{
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     max-width: 700px;
     margin: 0 auto;
@@ -156,6 +183,7 @@
     color: #787A7F;
     font-weight: bold;
     font-size: 13px;
+    padding-right: 34px;
 }
 
 .spotify-contents nav ul li:hover{
@@ -206,7 +234,7 @@
 }
 
 .song:nth-child(2) h3{
-    width: 250px;
+    max-width: 250px;
     text-align: center;
 }
  
@@ -244,9 +272,6 @@
     margin-top: 36px;
 }
 
-.spotify-contents .spotify-contents-container .recently-played{
-    flex-wrap: wrap;
-}
 
 .artisti-più-popolari .song div img{
     border-radius: 100%;
@@ -294,6 +319,7 @@
     justify-content: space-between;
     align-items: center;
     width: 20%;
+    max-width: 220px;
 }
 
 .buttom-bar-left .music-logo{
@@ -341,6 +367,7 @@
     width: 50%;
     flex-direction: column;
     align-items: center;
+    max-width: 900px;
 }
 
 .buttom-bar-centre .play-bar{
@@ -426,6 +453,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 20%;
+    max-width: 220px;
 }
 
 .buttom-bar-right .fa-solid{
@@ -476,3 +504,62 @@
 }
 
 /*RESPONSIVE AEREA*/
+
+@media screen and (max-width: 1285px){
+    
+    .spotify-contents .spotify-contents-container .recently-played{
+        flex-wrap: wrap;
+    }
+
+    .song div{
+        max-width: 200px;
+    }
+
+    .song:nth-child(2) h3{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .spotify-contents nav ul li{
+        padding-top: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px){
+
+    .side-menu{
+        width: 70px;
+    }
+
+    .spotify-contents{
+        width: calc(100% - 70px);
+    }
+
+    .top-bar{
+        width: calc(100% - 70px);
+    }
+
+    .side-menu .side-menu-desktop .side-menu-top:not(.logo),
+    .side-menu .side-menu-desktop .side-menu-buttom hr,
+    .side-menu .side-menu-desktop .side-menu-buttom h3,
+    .side-menu .side-menu-desktop .side-menu-buttom span span{
+        display: none;
+    }
+
+    .side-menu .side-menu-mobile{
+        display: block;
+    }
+
+    .buttom-bar-right .fa-solid:not(:last-of-type){
+        display: none;
+    }
+
+    .buttom-bar-centre{
+        max-width: 317px;
+    }
+
+}
